@@ -1,0 +1,21 @@
+# Frontend stays local
+frontend/
+
+# Python local/generated files
+__pycache__/
+*.pyc
+venv/
+.venv/
+*.log
+*.db
+
+# Terraform generated/state files
+.terraform/
+terraform.tfstate
+terraform.tfstate.*
+*.tfplan
+.terraform.tfstate.lock.info
+
+# Secrets/environment files
+.env
+.env.*
