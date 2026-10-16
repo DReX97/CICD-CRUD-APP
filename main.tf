@@ -1,11 +1,18 @@
 terraform {
   required_providers {
     aws = {
-      source  = "hashicorp/aws"
+      source = "hashicorp/aws"
+    }
+  }
+
+  cloud {
+    organization = "DReX97-Cloud-Labs"
+
+    workspaces {
+      name = "CICD-CRUD-APP"
     }
   }
 }
-
 # Configure the AWS Provider
 provider "aws" {
   region = var.aws_region
